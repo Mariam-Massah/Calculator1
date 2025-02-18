@@ -1,0 +1,77 @@
+/* ////////////// font family ////////////// */
+@font-face {
+    font-family: 'Art Nuvo';
+    src: url('FontsFree-Net-Art-nuvo.ttf') format('truetype'); /* تحميل الخط */
+    font-weight: normal;
+    font-style: normal;
+}  
+body {
+    font-family: 'Art Nuvo', sans-serif; /* تطبيق الخط */
+    height: 100vh;
+    width: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+}
+/* ////////////// calculator ////////////// */
+.calculator{
+    width: 60vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column; /*  بيخلي الكروت فوق بعض  */
+    align-items: center; 
+    gap: 20px;
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #0d0d0d, -10px -10px 20px #2a2a2a;
+
+}
+.display{
+    background: #141414;
+    color: #ffcc00;
+    font-size: 2em;
+    text-align: right;
+    padding: 15px;
+    height:9vh;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 10px #0d0d0d, inset -5px -5px 10px #2a2a2a;
+    pointer-events: none;
+    font-family: 'Art Nuvo', sans-serif; /* تطبيق الخط */
+}
+/* ////////////// buttons ////////////// */
+.buttons{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+}
+.buttons button{
+    border: none;
+    border-radius: 10%;
+    font-size: 25px;
+    font-family: 'Art Nuvo', sans-serif; /* تطبيق الخط */
+    color: #E0E0E0;
+    cursor: pointer;
+    padding:25px 20px;
+    color: white;
+    box-shadow: 4px 4px 10px #0d0d0d, -4px -4px 10px #2a2a2a;
+    transition: all 0.2s ease-in-out;
+}
+.buttons button:active{
+    box-shadow: inset 0px 2px 3px rgba(255, 255, 255, 0.5);
+    transform: translate(2px, 2px);
+}
+.num-btn{
+    background: linear-gradient(to bottom, #FFA726, #F57C00);
+}
+.oper-btn{
+    background: linear-gradient(to bottom, #FFA726, #F57C00); 
+}
+.equal-btn{
+    background: #2a2a2a;
+}
+.del-btn{
+    background: linear-gradient(to bottom, #FFA726, #F57C00);
+}
